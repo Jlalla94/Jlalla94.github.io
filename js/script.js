@@ -37,19 +37,30 @@ jQuery(function ($) {
   });
 });
 
-var slides = document.querySelectorAll('.inter');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide, 2000);
+var dist = document.getElementById("dist");
+var fly = document.getElementById("fly");
+var wed = document.getElementById("wed");
+var del = document.getElementById("del");
+var dri = document.getElementById("dri");
+var show = document.getElementsByClassName("show");
 
-function nextSlide() {
-  slides[currentSlide].className = 'inter';
-  currentSlide = (currentSlide + 1) % slides.length;
-  slides[currentSlide].className = 'inter show';
+dist.onclick = function () { 
+  show.classList.remove("show");
+  dist.classList.add("show");
 }
-
-function stopAndShow() {
-  slides[currentSlide].className = 'inter';
-  clearInterval(slideInterval);
-  this.classList.add('show');
-  console.log(slides[currentSlide]);
+fly.onclick = function () { 
+  show.classList.remove("show");
+  fly.classList.add("show");
+}
+wed.onclick = function () { 
+  show.classList.remove("show");
+  wed.classList.add("show");
+}
+del.onclick = function () { 
+  show.classList.remove("show");
+  del.classList.add("show");
+}
+dri.onclick = function () { 
+  show.className("inter");
+  dri.classList.add("show");
 }
