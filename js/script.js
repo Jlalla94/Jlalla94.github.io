@@ -1,6 +1,6 @@
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
@@ -8,38 +8,48 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
- 
-$(document).ready(function(){
-	$("#nav-list").on("click","a", function (event) {
 
-		event.preventDefault();
-		var id  = $(this).attr('href'),
+$(document).ready(function () {
+  $("#nav-list").on("click", "a", function (event) {
 
-			top = $(id).offset().top;
-		
-    $('body,html').animate({scrollTop: top}, 1500);
-    
+    event.preventDefault();
+    var id = $(this).attr('href'),
+
+      top = $(id).offset().top;
+
+    $('body,html').animate({
+      scrollTop: top
+    }, 1500);
+
     $("#nav-list").css('top', '-500px');
   });
-  $("#burger").click( function () {
+  $("#burger").click(function () {
     $("#nav-list").css('top', '0');
-	});
+  });
 });
-jQuery(function($){
-	$(document).mouseup(function (e){ 
-		var div = $("#nav-list"); 
-		if (!div.is(e.target) 
-		    && div.has(e.target).length === 0) { 
-          $("#nav-list").css('top', '-500px');
-		}
-	});
+jQuery(function ($) {
+  $(document).mouseup(function (e) {
+    var div = $("#nav-list");
+    if (!div.is(e.target) &&
+      div.has(e.target).length === 0) {
+      $("#nav-list").css('top', '-500px');
+    }
+  });
 });
 
 var slides = document.querySelectorAll('.inter');
 var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,20000);
-function nextSlide () {
+var slideInterval = setInterval(nextSlide, 2000);
+
+function nextSlide() {
   slides[currentSlide].className = 'inter';
-  currentSlide = (currentSlide+1)%slides.length;
+  currentSlide = (currentSlide + 1) % slides.length;
   slides[currentSlide].className = 'inter show';
+}
+
+function stopAndShow() {
+  slides[currentSlide].className = 'inter';
+  clearInterval(slideInterval);
+  this.classList.add('show');
+  console.log(slides[currentSlide]);
 }
