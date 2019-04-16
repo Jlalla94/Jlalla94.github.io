@@ -43,3 +43,8 @@ function nextSlide () {
   currentSlide = (currentSlide+1)%slides.length;
   slides[currentSlide].className = 'inter show';
 }
+
+function firstevent (id){
+    document.getElementsByClassName("inter show")[0].className = "inter"
+    document.getElementById(id).className ="inter show"
+  }
