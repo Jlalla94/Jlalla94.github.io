@@ -69,6 +69,11 @@
     background-color: #191A1F;
 }
 
+body {
+    margin: 0;
+
+}
+
 .wrapper_navbar {
     background: #000;
     width: 100%;
@@ -156,10 +161,7 @@
 }
 
 
-body {
-    margin: 0;
 
-}
 
 .header {
     width: 100%;
@@ -590,8 +592,9 @@ a:active {
 .servis_inter:target>div>p:first-child {
     margin-top: 280px;
 }
+
 .servis_inter:target>div>div {
-  display: none;
+    display: none;
 }
 
 .servis_inter::before {
@@ -622,27 +625,30 @@ a:active {
     font-size: 20px;
     padding-left: 19px;
 }
+
 .servis_air:target {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .servis_air:target>div {
-  width: 100%;
-  height: 620px;
-  background-position: 50% 90%;
+    width: 100%;
+    height: 620px;
+    background-position: 50% 90%;
 }
 
 .servis_air:target>div>.servis_desc_more {
-  display: block;
+    display: block;
 }
 
 .servis_air:target>div>p:first-child {
-  margin-top: 280px;
+    margin-top: 280px;
 }
+
 .servis_air:target>div>div {
-display: none;
+    display: none;
 }
+
 .servis_air::before {
     content: "02";
     .servis_before;
@@ -676,27 +682,30 @@ display: none;
     margin-top: 95px;
     transition: all ease-out 500ms;
 }
+
 .servis_wedding:target {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .servis_wedding:target>div {
-  width: 100%;
-  height: 620px;
-  background-position: 50% 90%;
+    width: 100%;
+    height: 620px;
+    background-position: 50% 90%;
 }
 
 .servis_wedding:target>div>.servis_desc_more {
-  display: block;
+    display: block;
 }
 
 .servis_wedding:target>div>p:first-child {
-  margin-top: 280px;
+    margin-top: 280px;
 }
+
 .servis_wedding:target>div>div {
-display: none;
+    display: none;
 }
+
 .servis_wedding::before {
     content: "03";
     .servis_before;
@@ -730,27 +739,30 @@ display: none;
     margin-top: 95px;
     transition: all ease-out 500ms;
 }
+
 .servis_deliver:target {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .servis_deliver:target>div {
-  width: 100%;
-  height: 620px;
-  background-position: 50% 90%;
+    width: 100%;
+    height: 620px;
+    background-position: 50% 90%;
 }
 
 .servis_deliver:target>div>.servis_desc_more {
-  display: block;
+    display: block;
 }
 
 .servis_deliver:target>div>p:first-child {
-  margin-top: 280px;
+    margin-top: 280px;
 }
+
 .servis_deliver:target>div>div {
-display: none;
+    display: none;
 }
+
 .servis_deliver::before {
     content: "04";
     .servis_before;
@@ -784,27 +796,30 @@ display: none;
     margin-top: 95px;
     transition: all ease-out 500ms;
 }
+
 .servis_nonalcho:target {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .servis_nonalcho:target>div {
-  width: 100%;
-  height: 620px;
-  background-position: 50% 90%;
+    width: 100%;
+    height: 620px;
+    background-position: 50% 90%;
 }
 
 .servis_nonalcho:target>div>.servis_desc_more {
-  display: block;
+    display: block;
 }
 
 .servis_nonalcho:target>div>p:first-child {
-  margin-top: 280px;
+    margin-top: 280px;
 }
+
 .servis_nonalcho:target>div>div {
-display: none;
+    display: none;
 }
+
 .servis_nonalcho::before {
     content: "05";
     .servis_before;
@@ -902,4 +917,101 @@ a {
     .PT_sans_reg;
     text-align: center;
     .light;
+}
+
+.navbar_nav_list {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .navbar_telephone {
+        display: none;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .nav_modal {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        border-bottom: none;
+    }
+
+    #burger {
+        display: none;
+    }
+
+    .navbar_img {
+        width: 80px;
+    }
+
+    .navbar_img>img {
+        width: 80px;
+    }
+
+    .navbar_nav_list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navbar_nav_list {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .navbar_nav_list>li {
+        list-style: none;
+        text-align: center;
+        line-height: 1em;
+        padding: 0 10px; 
+    }
+
+    .navbar_nav_list>li>a {
+        .PT_sans_bold;
+        text-decoration-line: none;
+        font-size: 14px;
+        .light;
+    }
+
+    .navbar_telephone {
+        margin: 0;
+        margin-left: 50px;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .navbar_telephone>h4 {
+        margin: 0;
+        padding: 0;
+        .light;
+    }
+
+    .navbar_telephone>h5 {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        .light;
+    }
+
+    .navbar_right_block {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .wrapper_navbar {
+        background: none;
+        width: 100%;
+        min-height: 100px;
+       
+
+    }
 }

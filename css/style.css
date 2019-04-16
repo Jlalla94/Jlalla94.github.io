@@ -52,6 +52,9 @@
 .b_dark_grey {
   background-color: #191A1F;
 }
+body {
+  margin: 0;
+}
 .wrapper_navbar {
   background: #000;
   width: 100%;
@@ -127,9 +130,6 @@
   color: #FFFFFF;
   text-decoration-line: none;
   font-size: 2em;
-}
-body {
-  margin: 0;
 }
 .header {
   width: 100%;
@@ -994,4 +994,86 @@ a {
   font-weight: normal;
   text-align: center;
   color: #FFFFFF;
+}
+.navbar_nav_list {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .navbar_telephone {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .nav_modal {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: none;
+  }
+  #burger {
+    display: none;
+  }
+  .navbar_img {
+    width: 80px;
+  }
+  .navbar_img > img {
+    width: 80px;
+  }
+  .navbar_nav_list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbar_nav_list {
+    padding-left: 0;
+    margin: 0;
+  }
+  .navbar_nav_list > li {
+    list-style: none;
+    text-align: center;
+    line-height: 1em;
+    padding: 0 10px;
+  }
+  .navbar_nav_list > li > a {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration-line: none;
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+  .navbar_telephone {
+    margin: 0;
+    margin-left: 50px;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    font-size: 24px;
+  }
+  .navbar_telephone > h4 {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+  }
+  .navbar_telephone > h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+  .navbar_right_block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .wrapper_navbar {
+    background: none;
+    width: 100%;
+    min-height: 100px;
+  }
 }
