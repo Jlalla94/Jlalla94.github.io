@@ -35,4 +35,11 @@ jQuery(function($){
 	});
 });
 
-
+var slides = document.querySelectorAll('.inter');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,20000);
+function nextSlide () {
+  slides[currentSlide].className = 'inter';
+  currentSlide = (currentSlide+1)%slides.length;
+  slides[currentSlide].className = 'inter show';
+}

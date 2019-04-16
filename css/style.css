@@ -1077,7 +1077,7 @@ a {
   .show.inter {
     width: 100% !important;
     height: 540px;
-    position: relative;
+    position: absolute;
     background: none;
     margin-top: 0;
   }
@@ -1145,12 +1145,13 @@ a {
     justify-content: space-around;
   }
   .inter {
-    margin-top: 40px;
+    margin-top: 600px;
     display: flex;
     flex-direction: column;
     height: 415px;
     width: 269px;
     background: #4B4E5B;
+    transition: all 500ms;
   }
   .img_left {
     position: relative;
@@ -1161,5 +1162,20 @@ a {
   }
   .last_block {
     display: none;
+  }
+  .Our_servises_title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .Our_servises_title > h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #4B4E5B;
+    font-size: 70px;
+    margin-bottom: 75px;
+    padding-left: 25px;
   }
 }
