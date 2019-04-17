@@ -1399,8 +1399,44 @@ a {
 	display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
 	opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
 	z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
-	padding: 10px 10px;
+    padding: 10px 10px;
 }
+@media screen and (max-width:550px) {
+    #modal_form {
+        /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+        top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+        left: 0; /* пoлoвинa экрaнa слевa */
+        margin-top: -60%;
+        margin-left: 0px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+        display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+        opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+        z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+        padding: 10px 10px;
+        overflow-y: scroll;
+    }
+    .comfort {
+        height: 120px!important;
+        
+    }
+    .comfort>h2{
+        margin-top: 10px;
+        font-size: 20px;
+        .PT_sans_bold;
+        margin-bottom: 0;
+    }
+    .comfort>h5{
+        font-size: 14px;
+        .PT_sans_bold;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+    .comfort>p {
+        font-size: 12px;
+        .PT_sans_reg;
+        margin-bottom: 0;
+    }
+}
+
 /* Кнoпкa зaкрыть для тех ктo в тaнке) */
 #modal_form #modal_close {
 	width: 32px;
@@ -1428,8 +1464,10 @@ a {
 }
 .content_modal {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
+@media screen and (min-width:551px) {
 .comfort>h2{
     margin-top: 10px;
     font-size: 32px;
@@ -1446,11 +1484,11 @@ a {
     font-size: 14px;
     .PT_sans_reg;
     margin-bottom: 0;
-}
+}}
 .comfort {
     border-radius: 10px;
-    min-height: 280px;
     max-width: 320px;
+    height: 280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
