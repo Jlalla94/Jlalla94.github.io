@@ -51,9 +51,4 @@ function firstevent (id){
     document.getElementsByClassName("inter show")[0].className = "inter"
     document.getElementById(id).className ="inter show"
   }
-// function stopAndShow() {
-//   slides[currentSlide].className = 'inter';
-//   clearInterval(slideInterval);
-//   this.classList.add('show');
-//   console.log(slides[currentSlide]);
-// }
+
