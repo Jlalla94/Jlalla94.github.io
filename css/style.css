@@ -1081,6 +1081,16 @@ a {
     background: none;
     margin-top: 0;
   }
+  .show > .right_block > h1 {
+    font-size: 80px;
+    color: #DBB266;
+    margin-bottom: 0 ;
+    margin-top: 20px;
+    display: block !important;
+  }
+  .inter > .right_block > h1 {
+    display: none;
+  }
   .show > .img_left {
     position: absolute;
     height: 355px;
@@ -1115,7 +1125,6 @@ a {
     justify-content: space-between;
   }
   .show > .right_block > h2 {
-    padding-top: 80px;
     font-size: 30px;
   }
   .right_block > h2 {
@@ -1133,7 +1142,7 @@ a {
     font-size: 12px;
   }
   .show > .right_block > .last_block {
-    padding-top: 80px;
+    padding-top: 40px;
     display: block;
   }
   .Our_servises_content {
@@ -1151,7 +1160,6 @@ a {
     height: 415px;
     width: 269px;
     background: #4B4E5B;
-    transition: all 500ms;
     cursor: pointer;
   }
   .img_left {

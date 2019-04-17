@@ -37,25 +37,9 @@ jQuery(function ($) {
   });
 });
 
-var dist = document.getElementById("dist");
-var fly = document.getElementById("fly");
-var wed = document.getElementById("wed");
-var del = document.getElementById("del");
-var dri = document.getElementById("dri");
-var show = document.getElementsByClassName("show");
-
-dist.onclick = function () { 
-  show.classList.remove("show");
-  dist.classList.add("show");
-}
 
 function firstevent (id){
     document.getElementsByClassName("inter show")[0].className = "inter"
     document.getElementById(id).className ="inter show"
   }
-// function stopAndShow() {
-//   slides[currentSlide].className = 'inter';
-//   clearInterval(slideInterval);
-//   this.classList.add('show');
-//   console.log(slides[currentSlide]);
-// }
+
