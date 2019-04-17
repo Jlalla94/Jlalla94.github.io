@@ -37,15 +37,7 @@ jQuery(function ($) {
   });
 });
 
-var slides = document.querySelectorAll('.inter');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide, 2000);
 
-function nextSlide() {
-  slides[currentSlide].className = 'inter';
-  currentSlide = (currentSlide + 1) % slides.length;
-  slides[currentSlide].className = 'inter show';
-}
 
 function firstevent (id){
     document.getElementsByClassName("inter show")[0].className = "inter"
