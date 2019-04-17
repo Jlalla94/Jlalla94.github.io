@@ -1195,14 +1195,30 @@ a {
   }
   .Our_tarif {
     align-items: flex-start;
+    padding-left: 140px;
+    background-image: url(../img/sds.png);
+    background-size: 800px 264px;
+    background-position: center right;
+    background-repeat: no-repeat;
   }
   .Our_tarif > h2 {
+    margin-top: 130px;
+    margin-bottom: 30px;
     font-size: 50px;
     text-align: start;
   }
   .Our_tarif > h3 {
     color: #FFFFFF;
     text-align: start;
+  }
+  .Our_tarif > a {
+    color: #FFFFFF;
+    text-align: start;
+    font-size: 14px;
+    background-color: #DBB266;
+    padding: 27px 91px ;
+    width: auto;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 940px) {
