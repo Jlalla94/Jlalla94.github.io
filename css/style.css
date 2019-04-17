@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i&subset=cyrillic');
+.no_mobaile {
+  display: none;
+}
 .PT_sans_reg {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -1202,11 +1205,63 @@ a {
     text-align: start;
   }
 }
-@media (min-width: 767px) {
+@media (min-width: 940px) {
+  .no_mobaile {
+    display: block;
+  }
+  .header_info_mobaile {
+    padding-left: 10%;
+  }
   .header {
     background-size: 405px auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 70px;
+  }
+  .header_title {
+    text-align: left;
+  }
+  .mobaile {
+    display: none;
+  }
+  .header_partner {
+    text-align: left;
+  }
+  .header_taxi {
+    text-align: left;
+  }
+  .header_taxi::before {
+    content: "VIP";
+  }
+  .header_telephone {
+    text-align: right;
+    font-size: 14px;
+    margin-right: 25%;
+  }
+  .header_tablet_img {
+    max-width: 565px !important;
+  }
+  .Our_classes_title {
+    width: 100%;
+    margin-left: 10%;
+    text-align: left;
+  }
+  .Our_classes_comfort::before {
+    display: none;
+  }
+  .Our_classes_comfort::after {
+    display: none;
+  }
+  .Our_classes_comfort_img {
+    display: none;
+    margin-left: -20px;
+  }
+  .Our_classes_comfort {
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1440px) {
+  .header_telephone {
+    margin-right: 45%;
   }
 }
