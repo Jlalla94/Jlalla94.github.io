@@ -1416,6 +1416,21 @@ a {
     display: block;
     color: #fff !important;
   }
+  .Our_classes_comfort_img_d {
+    position: relative;
+    width: 40%;
+    background-color: #DBB266;
+    margin-top: 8%;
+    padding-left: 30%;
+    margin-left: -35%;
+  }
+  .Our_classes_comfort_img_d > img {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    margin-left: 10%;
+    bottom: 0%;
+  }
 }
 @media (min-width: 1440px) {
   .header_telephone {
