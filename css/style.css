@@ -58,6 +58,9 @@
 body {
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 .wrapper_navbar {
   background: #000;
   width: 100%;
@@ -904,6 +907,63 @@ a:active {
   color: #DBB266;
   z-index: -1;
 }
+.servis_ch {
+  position: relative;
+  transition: all ease-out 500ms;
+}
+.servis_ch > div {
+  background-image: url(../img/autoch.png);
+  background-size: cover;
+  width: 307px;
+  height: 508px;
+  padding: 15px 0 15px 0;
+  z-index: 200;
+  margin-bottom: 56px;
+  transition: all ease-out 500ms;
+}
+.servis_ch > div > p:first-child {
+  margin-top: 240px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding-left: 19px;
+}
+.servis_ch > div > div:last-child {
+  margin-top: 75px;
+  transition: all ease-out 500ms;
+}
+.servis_ch:target {
+  width: 100%;
+  height: 100%;
+}
+.servis_ch:target > div {
+  width: 100%;
+  height: 620px;
+  background-position: 50% 90%;
+}
+.servis_ch:target > div > .servis_desc_more {
+  display: block;
+}
+.servis_ch:target > div > p:first-child {
+  margin-top: 280px;
+}
+.servis_ch:target > div > div {
+  display: none;
+}
+.servis_ch::before {
+  content: "06";
+  position: absolute;
+  top: -42px;
+  left: 5px;
+  font-size: 55px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #DBB266;
+  z-index: -1;
+}
 .Our_tarif {
   display: flex;
   align-items: center;
@@ -1015,6 +1075,7 @@ a {
   }
   .navbar {
     display: flex;
+    padding: 0;
     justify-content: space-around;
     width: 100%;
     border-bottom: none;
@@ -1060,15 +1121,20 @@ a {
     font-weight: normal;
     text-align: left;
     font-size: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    align-items: center;
   }
   .navbar_telephone > h4 {
     margin: 0;
     padding: 0;
     color: #FFFFFF;
   }
-  .navbar_telephone > h5 {
+  .navbar_telephone > div > h5 {
     margin: 0;
     padding: 0;
+    padding-left: 15px;
     font-size: 14px;
     color: #FFFFFF;
   }
@@ -1164,7 +1230,7 @@ a {
     display: flex;
     flex-direction: column;
     height: 415px;
-    width: 269px;
+    width: 245px;
     background: #4B4E5B;
     cursor: pointer;
   }
@@ -1173,7 +1239,7 @@ a {
     top: 0;
   }
   .img_left > img {
-    width: 269px;
+    width: 245px;
   }
   .last_block {
     display: none;
