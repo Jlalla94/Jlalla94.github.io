@@ -463,6 +463,8 @@ a:active {
 }
 .Our_classes_comfort_img > img {
   margin: -15% 0% 0% 25%;
+  width: 273px;
+  height: 134px;
 }
 .Our_classes_text {
   width: 100%;
@@ -490,6 +492,8 @@ a:active {
 }
 .Our_classes_busines_img > img {
   margin: -15% 0% 0% 25%;
+  width: 273px;
+  height: 149px;
 }
 .Our_classes_lux_img {
   display: flex;
